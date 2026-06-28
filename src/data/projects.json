@@ -3,7 +3,12 @@
     "id": "face-and-hand-tracker",
     "title": "Face & Hand Tracker",
     "description": "Real-time face and sign language AI tracker powered by computer vision and MediaPipe.",
-    "tags": ["Python", "JavaScript", "MediaPipe", "React"],
+    "tags": [
+      "Python",
+      "JavaScript",
+      "MediaPipe",
+      "React"
+    ],
     "url": "https://shauryabengani146.github.io/faceandhandtracker/",
     "featured": true
   },
@@ -11,7 +16,11 @@
     "id": "rcb-portfolio",
     "title": "RCB Portfolio",
     "description": "A themed portfolio and fan page for Royal Challengers Bangalore with dynamic content.",
-    "tags": ["HTML", "CSS", "JavaScript"],
+    "tags": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
     "url": "https://shauryabengani146.github.io/rcb.github.io/",
     "featured": false
   },
@@ -19,7 +28,11 @@
     "id": "scratch-my-itch",
     "title": "Scratch My Itch",
     "description": "An interactive web application with creative mini-tools and utility features.",
-    "tags": ["JavaScript", "CSS", "Web App"],
+    "tags": [
+      "JavaScript",
+      "CSS",
+      "Web App"
+    ],
     "url": "https://shauryabengani146.github.io/scratchmyitch./",
     "featured": true
   },
@@ -27,7 +40,11 @@
     "id": "the-exam-story",
     "title": "The Exam Story",
     "description": "A storytelling web experience exploring the student exam journey with interactive narratives.",
-    "tags": ["JavaScript", "HTML", "CSS"],
+    "tags": [
+      "JavaScript",
+      "HTML",
+      "CSS"
+    ],
     "url": "https://shauryabengani146.github.io/theexamstory/",
     "featured": false
   },
@@ -35,7 +52,11 @@
     "id": "super-tic-tac-toe",
     "title": "Super Tic-Tac-Toe",
     "description": "A strategic twist on classic tic-tac-toe with nested boards and advanced game mechanics.",
-    "tags": ["JavaScript", "Game Dev", "CSS"],
+    "tags": [
+      "JavaScript",
+      "Game Dev",
+      "CSS"
+    ],
     "url": "https://shauryabengani146.github.io/supertictactoe/",
     "featured": true
   },
@@ -43,7 +64,11 @@
     "id": "4d-chess",
     "title": "4D Chess",
     "description": "A mind-bending multi-dimensional chess game pushing the boundaries of spatial reasoning.",
-    "tags": ["JavaScript", "Three.js", "Game Dev"],
+    "tags": [
+      "JavaScript",
+      "Three.js",
+      "Game Dev"
+    ],
     "url": "https://shauryabengani146.github.io/4Dchess/",
     "featured": true
   }
