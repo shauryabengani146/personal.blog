@@ -1,8 +1,55 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
+
+const ROLES = [
+  "software & ai developer",
+  "student",
+  "learner",
+  "JEE aspirant",
+];
+
+const TYPE_SPEED = 80;
+const DELETE_SPEED = 40;
+const PAUSE_AFTER_TYPE = 2000;
+const PAUSE_AFTER_DELETE = 500;
 
 export default function Hero() {
+  const [displayText, setDisplayText] = useState("");
+  const [roleIndex, setRoleIndex] = useState(0);
+  const [isDeleting, setIsDeleting] = useState(false);
+
+  useEffect(() => {
+    const currentRole = ROLES[roleIndex];
+    let timer: NodeJS.Timeout;
+
+    if (!isDeleting) {
+      if (displayText.length < currentRole.length) {
+        timer = setTimeout(() => {
+          setDisplayText(currentRole.slice(0, displayText.length + 1));
+        }, TYPE_SPEED);
+      } else {
+        timer = setTimeout(() => {
+          setIsDeleting(true);
+        }, PAUSE_AFTER_TYPE);
+      }
+    } else {
+      if (displayText.length > 0) {
+        timer = setTimeout(() => {
+          setDisplayText(currentRole.slice(0, displayText.length - 1));
+        }, DELETE_SPEED);
+      } else {
+        timer = setTimeout(() => {
+          setIsDeleting(false);
+          setRoleIndex((prev) => (prev + 1) % ROLES.length);
+        }, PAUSE_AFTER_DELETE);
+      }
+    }
+
+    return () => clearTimeout(timer);
+  }, [displayText, isDeleting, roleIndex]);
+
   return (
     <section
       id="home"
@@ -41,7 +88,7 @@ export default function Hero() {
             color: "var(--fg)",
           }}
         >
-          Hi, I&apos;m{" "}
+          Hello, world. I am{" "}
           <span
             style={{
               background: "linear-gradient(135deg, var(--accent) 0%, var(--accent-2) 100%)",
@@ -53,7 +100,7 @@ export default function Hero() {
           </span>
         </motion.h1>
 
-        {/* Terminal line */}
+        {/* Typewriter terminal line */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -62,7 +109,7 @@ export default function Hero() {
           style={{ fontFamily: "'JetBrains Mono', monospace" }}
         >
           <span style={{ color: "var(--accent)" }}>&gt;</span>
-          <span style={{ color: "var(--fg-1)" }}>software &amp; ai developer</span>
+          <span style={{ color: "var(--fg-1)" }}>{displayText}</span>
           <span
             className="inline-block w-2.5 h-5 animate-cursor"
             style={{ background: "var(--accent)" }}
