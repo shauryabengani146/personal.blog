@@ -10,13 +10,13 @@ const socials = [
   },
   {
     label: "Email",
-    href: "mailto:shauryabengani146@gmail.com",
+    href: "mailto:shauryabengani.1406@gmail.com",
     icon: "✉",
   },
   {
-    label: "LinkedIn",
-    href: "https://linkedin.com/in/shauryabengani",
-    icon: "◈",
+    label: "WhatsApp",
+    href: "https://wa.me/919289856578",
+    icon: "💬",
   },
 ];
 
