@@ -71,5 +71,43 @@
     ],
     "url": "https://shauryabengani146.github.io/4Dchess/",
     "featured": true
+  },
+  {
+    "id": "diet",
+    "title": "Diet",
+    "description": "A personal diet and nutrition tracking app for monitoring meals, macros, and building healthier habits.",
+    "tags": [
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "Health"
+    ],
+    "url": "https://github.com/shauryabengani146/diet",
+    "featured": true
+  },
+  {
+    "id": "form-guide",
+    "title": "FormGuide",
+    "description": "A responsive web app for learning proper exercise form — full-text search, muscle anatomy charts, workout builder, and favorites dashboard built with Next.js 15 and TypeScript.",
+    "tags": [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Fitness"
+    ],
+    "url": "https://github.com/shauryabengani146/FormGuide",
+    "featured": true
+  },
+  {
+    "id": "vibecodefixer",
+    "title": "VibeCodeFixer (Pinpoint)",
+    "description": "A VS Code extension for applying precise, deterministic manual edits — CSS colors, padding, margin and more — to any selection via the Command Palette or right-click menu.",
+    "tags": [
+      "TypeScript",
+      "VS Code",
+      "Developer Tools"
+    ],
+    "url": "https://github.com/shauryabengani146/vibecodefixer",
+    "featured": false
   }
 ]
